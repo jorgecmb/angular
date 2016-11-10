@@ -15,12 +15,12 @@ export class BotaoComponent{
     @Output() acao = new EventEmitter();
     
     executaAcao() {
-        if(this.confirmacao) {
-            if (confirm('Confirma a exclusão?')) {
+        //if(this.confirmacao) {
+          //  if (confirm('Confirma a exclusão?')) {
                 this.acao.emit(null);
-            }
-            return;
-        }
-        this.acao.emit(null);
+           // }
+            //return;
+        //}
+        //this.acao.emit(null);
     }
 }
